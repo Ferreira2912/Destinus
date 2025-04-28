@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Viagens | Destinus</title>
+    <meta name="description" content="Dicas, notícias e informações sobre viagens rodoviárias e aéreas para ajudar no planejamento da sua próxima aventura.">
+    
+    <!-- Pré-conexão para melhor performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo" id="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="Destinus" class="logo-img">
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="pacotes.html" class="nav-link">Pacotes</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-cta">
+                <button class="cta-button pulse">FALE COM UM ESPECIALISTA</button>
+            </div>
+            
+            <div class="mobile-menu-btn">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="subpage-hero" style="background-image: url('images/blog-hero.jpg')">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>BLOG <span>DE VIAGENS</span></h1>
+            <p>Dicas, notícias e informações para sua próxima aventura</p>
+        </div>
+    </section>
+    
+    <!-- Blog Content -->
+    <section class="blog-content">
+        <div class="content-container">
+            <div class="blog-main">
+                <!-- Post Destaque -->
+                <div class="post-destaque">
+                    <div class="destaque-image">
+                        <img src="images/blog-destaque.jpg" alt="Dicas para viagens de ônibus">
+                        <div class="destaque-overlay"></div>
+                        <span class="destaque-categoria">DICAS</span>
+                    </div>
+                    <div class="destaque-content">
+                        <h2>10 Dicas Essenciais para Viajar de Ônibus com Conforto</h2>
+                        <p class="destaque-resumo">Viajar de ônibus pode ser uma experiência muito mais agradável do que você imagina, desde que você esteja preparado. Neste guia completo, reunimos as melhores dicas para você aproveitar ao máximo sua viagem rodoviária, seja ela curta ou longa.</p>
+                        <div class="destaque-meta">
+                            <span class="destaque-data">15 MAI 2025</span>
+                            <span class="destaque-tempo">5 MIN LEITURA</span>
+                        </div>
+                        <a href="post.html" class="cta-button2 small">LER ARTIGO</a>
+                    </div>
+                </div>
+                
+                <!-- Filtros -->
+                <div class="blog-filtros">
+                    <div class="filtro-categorias">
+                        <button class="filtro-btn active">Todos</button>
+                        <button class="filtro-btn">Dicas</button>
+                        <button class="filtro-btn">Destinos</button>
+                        <button class="filtro-btn">Economia</button>
+                        <button class="filtro-btn">Notícias</button>
+                    </div>
+                    
+                    <div class="filtro-busca">
+                        <input type="text" placeholder="Buscar no blog...">
+                        <button class="busca-btn">
+                            <img src="assets/icons/search-icon.svg" alt="Buscar">
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Posts Grid -->
+                <div class="posts-grid">
+                    <!-- Post 1 -->
+                    <div class="post-card">
+                        <div class="post-image">
+                            <img src="images/blog-1.jpg" alt="Destinos nacionais">
+                            <div class="post-overlay"></div>
+                            <span class="post-categoria">DESTINOS</span>
+                        </div>
+                        <div class="post-info">
+                            <h3>5 Destinos Nacionais Perfeitos para Viajar em 2025</h3>
+                            <p class="post-resumo">Confira nossa seleção dos melhores destinos brasileiros para visitar este ano, com opções para todos os gostos e bolsos.</p>
+                            <div class="post-meta">
+                                <span class="post-data">02 MAI 2025</span>
+                                <span class="post-tempo">7 MIN LEITURA</span>
+                            </div>
+                            <a href="post.html" class="post-link">Ler mais →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Post 2 -->
+                    <div class="post-card">
+                        <div class="post-image">
+                            <img src="images/blog-2.jpg" alt="Economizar em viagens">
+                            <div class="post-overlay"></div>
+                            <span class="post-categoria">ECONOMIA</span>
+                        </div>
+                        <div class="post-info">
+                            <h3>Como Economizar em Pacotes de Viagem sem Perder Qualidade</h3>
+                            <p class="post-resumo">Estratégias inteligentes para gastar menos e aproveitar mais suas férias, sem abrir mão do conforto e segurança.</p>
+                            <div class="post-meta">
+                                <span class="post-data">20 ABR 2025</span>
+                                <span class="post-tempo">6 MIN LEITURA</span>
+                            </div>
+                            <a href="post.html" class="post-link">Ler mais →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Post 3 -->
+                    <div class="post-card">
+                        <div class="post-image">
+                            <img src="images/blog-3.jpg" alt="Documentação para viagens">
+                            <div class="post-overlay"></div>
+                            <span class="post-categoria">DICAS</span>
+                        </div>
+                        <div class="post-info">
+                            <h3>Documentos Necessários para Viajar: Guia Completo</h3>
+                            <p class="post-resumo">Não seja pego de surpresa! Saiba quais documentos são obrigatórios para viagens nacionais e internacionais.</p>
+                            <div class="post-meta">
+                                <span class="post-data">10 ABR 2025</span>
+                                <span class="post-tempo">8 MIN LEITURA</span>
+                            </div>
+                            <a href="post.html" class="post-link">Ler mais →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Post 4 -->
+                    <div class="post-card">
+                        <div class="post-image">
+                            <img src="images/blog-4.jpg" alt="Viagem com crianças">
+                            <div class="post-overlay"></div>
+                            <span class="post-categoria">DICAS</span>
+                        </div>
+                        <div class="post-info">
+                            <h3>Viajando com Crianças: Como Tornar a Experiência Melhor</h3>
+                            <p class="post-resumo">Dicas práticas para viajar com os pequenos, seja de ônibus ou avião, sem estresse e com muitas diversões.</p>
+                            <div class="post-meta">
+                                <span class="post-data">28 MAR 2025</span>
+                                <span class="post-tempo">5 MIN LEITURA</span>
+                            </div>
+                            <a href="post.html" class="post-link">Ler mais →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Post 5 -->
+                    <div class="post-card">
+                        <div class="post-image">
+                            <img src="images/blog-5.jpg" alt="Novas rotas rodoviárias">
+                            <div class="post-overlay"></div>
+                            <span class="post-categoria">NOTÍCIAS</span>
+                        </div>
+                        <div class="post-info">
+                            <h3>Novas Rotas Rodoviárias Disponíveis em 2025</h3>
+                            <p class="post-resumo">Conheça as novas opções de viagem de ônibus entre capitais e destinos turísticos que começaram a operar este ano.</p>
+                            <div class="post-meta">
+                                <span class="post-data">15 MAR 2025</span>
+                                <span class="post-tempo">4 MIN LEITURA</span>
+                            </div>
+                            <a href="post.html" class="post-link">Ler mais →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Post 6 -->
+                    <div class="post-card">
+                        <div class="post-image">
+                            <img src="images/blog-6.jpg" alt="Mochilão pelo Brasil">
+                            <div class="post-overlay"></div>
+                            <span class="post-categoria">DESTINOS</span>
+                        </div>
+                        <div class="post-info">
+                            <h3>Roteiro de Mochilão pelo Brasil em 30 Dias</h3>
+                            <p class="post-resumo">Planejamento completo para conhecer as belezas do Brasil gastando pouco, usando principalmente transporte rodoviário.</p>
+                            <div class="post-meta">
+                                <span class="post-data">05 MAR 2025</span>
+                                <span class="post-tempo">10 MIN LEITURA</span>
+                            </div>
+                            <a href="post.html" class="post-link">Ler mais →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Paginação -->
+                <div class="blog-paginacao">
+                    <button class="pagina active">1</button>
+                    <button class="pagina">2</button>
+                    <button class="pagina">3</button>
+                    <span>...</span>
+                    <button class="pagina">5</button>
+                    <button class="proxima">Próxima &rarr;</button>
+                </div>
+            </div>
+            
+            <div class="blog-sidebar">
+                <!-- Newsletter -->
+                <div class="sidebar-newsletter">
+                    <h3>RECEBA AS NOVIDADES</h3>
+                    <p>Cadastre-se e receba nossos artigos e ofertas exclusivas</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu melhor e-mail">
+                        <button type="submit" class="cta-button small">ASSINAR</button>
+                    </form>
+                </div>
+                
+                <!-- Posts Populares -->
+                <div class="sidebar-populares">
+                    <h3>POPULARES</h3>
+                    <div class="popular-item">
+                        <img src="images/blog-popular-1.jpg" alt="Destinos baratos">
+                        <div class="popular-info">
+                            <h4>10 Destinos Incríveis por Menos de R$ 1.000</h4>
+                            <span>12 ABR 2025</span>
+                        </div>
+                    </div>
+                    
+                    <div class="popular-item">
+                        <img src="images/blog-popular-2.jpg" alt="Viagem solo">
+                        <div class="popular-info">
+                            <h4>Guia Completo para Viajar Sozinho pela Primeira Vez</h4>
+                            <span>05 ABR 2025</span>
+                        </div>
+                    </div>
+                    
+                    <div class="popular-item">
+                        <img src="images/blog-popular-3.jpg" alt="Malas">
+                        <div class="popular-info">
+                            <h4>O Que Levar na Mala para Diferentes Tipos de Viagem</h4>
+                            <span>28 MAR 2025</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Categorias -->
+                <div class="sidebar-categorias">
+                    <h3>CATEGORIAS</h3>
+                    <ul>
+                        <li><a href="#">Dicas <span>12</span></a></li>
+                        <li><a href="#">Destinos <span>8</span></a></li>
+                        <li><a href="#">Economia <span>5</span></a></li>
+                        <li><a href="#">Notícias <span>4</span></a></li>
+                        <li><a href="#">Relatos <span>3</span></a></li>
+                    </ul>
+                </div>
+                
+                <!-- Tags -->
+                <div class="sidebar-tags">
+                    <h3>TAGS</h3>
+                    <div class="tags-container">
+                        <a href="#" class="tag">#viagemdeônibus</a>
+                        <a href="#" class="tag">#dicas</a>
+                        <a href="#" class="tag">#roteiros</a>
+                        <a href="#" class="tag">#economizar</a>
+                        <a href="#" class="tag">#destinos</a>
+                        <a href="#" class="tag">#brasil</a>
+                        <a href="#" class="tag">#pacotes</a>
+                        <a href="#" class="tag">#viagemsolo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-content">
+                <h2>PRONTO PARA SUA PRÓXIMA AVENTURA?</h2>
+                <p>Confira nossos pacotes exclusivos e comece a planejar sua viagem dos sonhos</p>
+                <button class="cta-button">VER PACOTES</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <span>DESTINUS</span>
+                <p>Sua jornada começa aqui</p>
+                
+                <div class="social-icons">
+                    <a href="#"><img src="assets/icons/facebook-icon.svg" alt="Facebook"></a>
+                    <a href="#"><img src="assets/icons/instagram-icon.svg" alt="Instagram"></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Pacotes</h4>
+                    <ul>
+                        <li><a href="#">Pacotes Rodoviários</a></li>
+                        <li><a href="#">Pacotes Aéreos</a></li>
+                        <li><a href="#">Pacotes Nacionais</a></li>
+                        <li><a href="#">Pacotes Internacionais</a></li>
+                        <li><a href="#">Promoções</a></li>
+                    </ul>
+                </div>
+                
+                <div class="link-group">
+                    <h4>Informações</h4>
+                    <ul>
+                        <li><a href="#">Blog de Viagens</a></li>
+                        <li><a href="#">Dicas para Viajar</a></li>
+                        <li><a href="#">Documentação Necessária</a></li>
+                        <li><a href="#">Perguntas Frequentes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="link-group">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre a Destinus</a></li>
+                        <li><a href="#">Termos e Condições</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Destinus Turismo. Todos os direitos reservados.</p>
+            <div class="payment-methods">
+                <img src="assets/icons/visa-icon.svg" alt="Visa">
+                <img src="assets/icons/mastercard-icon.svg" alt="Mastercard">
+                <img src="assets/icons/pix-icon.svg" alt="Pix">
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Botão WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=5555996222695&text=Ola.%20Tudo%20bem?%20Atenderemos%20você%20assim%20que%20possível.%0AObrigada%20por%20nós%20contatar&fbclid=PAZXh0bgNhZW0CMTEAAacZD5Dmk9RQ9eWGmsIHwlSeO6fC3qSlGsAsp_3_vJLFmJFblu30hhdquBXPkg_aem_tSwep8Nmndj9KBUGbYvowg" 
+            class="whatsapp-button" target="_blank">
+        <img src="assets/icons/whatsapp-icon-large.svg" alt="WhatsApp">
+    </a>
+    
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>

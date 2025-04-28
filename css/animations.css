@@ -1,0 +1,288 @@
+/* Animação de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animação de pulse para CTA */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(251, 85, 3, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(251, 85, 3, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(251, 85, 3, 0);
+    }
+}
+
+/* Animação de hover para cards */
+@keyframes cardHover {
+    0% {
+        transform: translateY(0);
+        box-shadow: var(--shadow-md);
+    }
+    100% {
+        transform: translateY(-10px);
+        box-shadow: var(--shadow-lg);
+    }
+}
+
+/* Animação de hover para ícones */
+@keyframes iconHover {
+    0% {
+        transform: scale(1);
+        background-color: rgba(251, 85, 3, 0.1);
+    }
+    100% {
+        transform: scale(1.1);
+        background-color: rgba(251, 85, 3, 0.2);
+    }
+}
+
+/* Animação de hover para botões */
+@keyframes buttonHover {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Animação de hover para social icons */
+@keyframes socialHover {
+    0% {
+        transform: translateY(0);
+        background-color: rgba(251, 85, 3, 0.1);
+    }
+    100% {
+        transform: translateY(-3px);
+        background-color: rgba(251, 85, 3, 0.2);
+    }
+}
+
+/* Animação de texto digitando */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Animação de cursor piscando */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--secondary-color);
+    }
+}
+
+/* Aplicando animações */
+.hero-title {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.hero-subtitle {
+    opacity: 0;
+    animation: fadeIn 1s ease-out 0.5s forwards;
+}
+
+.hero-cta {
+    opacity: 0;
+    animation: fadeIn 1s ease-out 1s forwards;
+}
+
+.scroll-indicator {
+    opacity: 0;
+    animation: fadeIn 1s ease-out 1.5s forwards;
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Efeito de hover */
+.beneficio-icon {
+    animation: iconHover 0.3s ease-out reverse forwards;
+}
+
+.beneficio-card:hover .beneficio-icon {
+    animation: iconHover 0.3s ease-out forwards;
+}
+
+.pacote-card {
+    animation: cardHover 0.3s ease-out reverse forwards;
+}
+
+.pacote-card:hover {
+    animation: cardHover 0.3s ease-out forwards;
+}
+
+.social-icons a {
+    animation: socialHover 0.3s ease-out reverse forwards;
+}
+
+.social-icons a:hover {
+    animation: socialHover 0.3s ease-out forwards;
+}
+
+/* Efeitos de seção */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Efeito de digitação para textos */
+.typing-effect {
+    border-right: 3px solid var(--secondary-color);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Efeito de parallax */
+.parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Efeito de brilho */
+.glow-effect {
+    position: relative;
+}
+
+.glow-effect::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(251, 85, 3, 0.3) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.glow-effect:hover::after {
+    opacity: 1;
+}
+
+/* Efeito de onda */
+.wave-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.wave-effect::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(251, 85, 3, 0.4);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+}
+
+.wave-effect:focus:not(:active)::after {
+    animation: wave 1s ease-out;
+}
+
+@keyframes wave {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(20, 20);
+        opacity: 0;
+    }
+}
+
+/* Efeito de máquina de escrever para títulos */
+.typewriter h2 {
+    overflow: hidden;
+    border-right: 3px solid var(--secondary-color);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Efeito de flutuação para elementos */
+.float-element {
+    animation: float 6s ease-in-out infinite;
+}
+
+.float-element:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.float-element:nth-child(3) {
+    animation-delay: 2s;
+}
+
+/* Efeito de zoom suave */
+.zoom-on-scroll {
+    transition: transform 0.5s ease;
+}
+
+/* Efeito de gradiente animado */
+.animated-gradient {
+    background: linear-gradient(-45deg, #024161, #0468a1, #FB5503, #0a0a12);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Contador de números */
+@keyframes countUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.numero-value {
+    display: inline-block;
+    animation: countUp 1s ease-out forwards;
+}

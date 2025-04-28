@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacotes de Viagem | Destinus</title>
+    <meta name="description" content="Confira todos os nossos pacotes de viagens rodoviários e aéreos para os melhores destinos nacionais e internacionais.">
+    
+    <!-- Pré-conexão para melhor performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo" id="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="Destinus" class="logo-img">
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="pacotes.html" class="nav-link">Pacotes</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-cta">
+                <button class="cta-button pulse">FALE COM UM ESPECIALISTA</button>
+            </div>
+            
+            <div class="mobile-menu-btn">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="subpage-hero" style="background-image: url('images/pacotes-hero.jpg')">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>NOSSOS <span>PACOTES</span></h1>
+            <p>Encontre a viagem perfeita para seu próximo destino</p>
+        </div>
+    </section>
+    
+    <!-- Filtros Section -->
+    <section class="filtros-section">
+        <div class="filtros-container">
+            <div class="filtros-header">
+                <h2>FILTRAR PACOTES</h2>
+                <p>Encontre exatamente o que você procura</p>
+            </div>
+            
+            <form class="filtros-form" id="filtrosForm">
+                <div class="filtro-group">
+                    <label for="tipo">Tipo de Pacote</label>
+                    <select id="tipo" name="tipo">
+                        <option value="todos">Todos</option>
+                        <option value="rodoviario">Rodoviário</option>
+                        <option value="aereo">Aéreo</option>
+                        <option value="cruzeiro">Cruzeiro</option>
+                    </select>
+                </div>
+                
+                <div class="filtro-group">
+                    <label for="destino">Destino</label>
+                    <select id="destino" name="destino">
+                        <option value="todos">Todos Destinos</option>
+                        <option value="nordeste">Nordeste</option>
+                        <option value="centro-oeste">Centro-Oeste</option>
+                        <option value="sudeste">Sudeste</option>
+                        <option value="sul">Sul</option>
+                        <option value="internacional">Internacional</option>
+                    </select>
+                </div>
+                
+                <div class="filtro-group">
+                    <label for="duracao">Duração</label>
+                    <select id="duracao" name="duracao">
+                        <option value="todos">Qualquer Duração</option>
+                        <option value="curta">Até 3 dias</option>
+                        <option value="media">4 a 7 dias</option>
+                        <option value="longa">Mais de 7 dias</option>
+                    </select>
+                </div>
+                
+                <div class="filtro-group">
+                    <label for="preco">Faixa de Preço</label>
+                    <select id="preco" name="preco">
+                        <option value="todos">Qualquer Preço</option>
+                        <option value="economico">Até R$ 1.000</option>
+                        <option value="medio">R$ 1.000 a R$ 3.000</option>
+                        <option value="premium">Acima de R$ 3.000</option>
+                    </select>
+                </div>
+            
+                <button type="reset" class="secondary-button">LIMPAR</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Resultados Section -->
+    <section class="resultados-section">
+        <div class="resultados-header">
+            <h2>PACOTES ENCONTRADOS</h2>
+            <div class="ordenar">
+                <label for="ordenacao">Ordenar por:</label>
+                <select id="ordenacao" name="ordenacao">
+                    <option value="relevancia">Relevância</option>
+                    <option value="preco-asc">Preço: Menor para Maior</option>
+                    <option value="preco-desc">Preço: Maior para Menor</option>
+                    <option value="duracao-asc">Duração: Menor para Maior</option>
+                    <option value="duracao-desc">Duração: Maior para Menor</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="pacotes-container">
+            <!-- Pacote 1 -->
+            <div class="pacote-card rodoviario" data-destino="centro-oeste" data-duracao="longa" data-preco="premium">
+                <div class="pacote-badge">RODOVIÁRIO</div>
+                <div class="pacote-image">
+                    <img src="images/pacote-1.jpg" alt="Pantanal">
+                    <div class="pacote-overlay"></div>
+                </div>
+                <div class="pacote-info">
+                    <h3>Pantanal, Bonito, Miranda e Corumbá / MS</h3>
+                    <div class="pacote-meta">
+                        <span class="duracao">8 dias</span>
+                        <span class="preco">10x de R$375,00</span>
+                    </div>
+                    <div class="pacote-desc">
+                        <p>Conheça as maravilhas do Pantanal, Bonito, Miranda e Corumbá em uma viagem repleta de natureza e aventura.</p>
+                    </div>
+                    <div class="pacote-cta">
+                        <a href="pacote.html" class="cta-button small">DETALHES</a>
+                        <button class="secondary-button small">FAZER RESERVA</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pacote 2 -->
+            <div class="pacote-card rodoviario" data-destino="sudeste" data-duracao="media" data-preco="medio">
+                <div class="pacote-badge">RODOVIÁRIO</div>
+                <div class="pacote-image">
+                    <img src="images/pacote-2.jpg" alt="Aparecida e Rio de Janeiro">
+                    <div class="pacote-overlay"></div>
+                </div>
+                <div class="pacote-info">
+                    <h3>Aparecida e Rio de Janeiro</h3>
+                    <div class="pacote-meta">
+                        <span class="duracao">6 dias</span>
+                        <span class="preco">10x de R$275,00</span>
+                    </div>
+                    <div class="pacote-desc">
+                        <p>Descubra a fé e a beleza em uma viagem que une Aparecida e Rio de Janeiro.</p>
+                    </div>
+                    <div class="pacote-cta">
+                        <a href="pacote.html" class="cta-button small">DETALHES</a>
+                        <button class="secondary-button small">FAZER RESERVA</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pacote 3 -->
+            <div class="pacote-card aereo" data-destino="sul" data-duracao="curta" data-preco="economico" data-partida="2025-08">
+                <div class="pacote-badge">AÉREO</div>
+                <div class="pacote-image">
+                    <img src="images/pacote-3.jpg" alt="Ametista do Sul">
+                    <div class="pacote-overlay"></div>
+                </div>
+                <div class="pacote-info">
+                    <h3>Ametista do Sul</h3>
+                    <div class="pacote-meta">
+                        <span class="duracao">1 dias</span>
+                        <span class="preco">04x de R$87,59</span>
+                    </div>
+                    <div class="pacote-desc">
+                        <p>Encante-se com Ametista do Sul, um destino único no sul do Brasil onde natureza, espiritualidade e pedras preciosas se encontram.</p>
+                    </div>
+                    <div class="pacote-cta">
+                        <a href="pacote.html" class="cta-button small">DETALHES</a>
+                        <button class="secondary-button small">FAZER RESERVA</button>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="paginacao">
+            
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-content">
+                <h2>NÃO ENCONTROU O PACOTE IDEAL?</h2>
+                <p>Nossos especialistas podem criar um pacote personalizado para você</p>
+                <button class="cta-button">FALE COM UM ESPECIALISTA</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <span>DESTINUS</span>
+                <p>Sua jornada começa aqui</p>
+                
+                <div class="social-icons">
+                    <a href="#"><img src="assets/icons/facebook-icon.svg" alt="Facebook"></a>
+                    <a href="#"><img src="assets/icons/instagram-icon.svg" alt="Instagram"></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Pacotes</h4>
+                    <ul>
+                        <li><a href="#">Pacotes Rodoviários</a></li>
+                        <li><a href="#">Pacotes Aéreos</a></li>
+                        <li><a href="#">Pacotes Nacionais</a></li>
+                        <li><a href="#">Pacotes Internacionais</a></li>
+                        <li><a href="#">Promoções</a></li>
+                    </ul>
+                </div>
+                
+                <div class="link-group">
+                    <h4>Informações</h4>
+                    <ul>
+                        <li><a href="#">Blog de Viagens</a></li>
+                        <li><a href="#">Dicas para Viajar</a></li>
+                        <li><a href="#">Documentação Necessária</a></li>
+                        <li><a href="#">Perguntas Frequentes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="link-group">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre a Destinus</a></li>
+                        <li><a href="#">Termos e Condições</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Destinus Turismo. Todos os direitos reservados.</p>
+            <div class="payment-methods">
+                <img src="assets/icons/visa-icon.svg" alt="Visa">
+                <img src="assets/icons/mastercard-icon.svg" alt="Mastercard">
+                <img src="assets/icons/pix-icon.svg" alt="Pix">
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Botão WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=5555996222695&text=Ola.%20Tudo%20bem?%20Atenderemos%20você%20assim%20que%20possível.%0AObrigada%20por%20nós%20contatar&fbclid=PAZXh0bgNhZW0CMTEAAacZD5Dmk9RQ9eWGmsIHwlSeO6fC3qSlGsAsp_3_vJLFmJFblu30hhdquBXPkg_aem_tSwep8Nmndj9KBUGbYvowg" 
+            class="whatsapp-button" target="_blank">
+        <img src="assets/icons/whatsapp-icon-large.svg" alt="WhatsApp">
+    </a>
+    
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/filters.js"></script>
+</body>
+</html>

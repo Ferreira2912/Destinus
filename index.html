@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinus | Pacotes de Viagens Rodoviários e Aéreos</title>
+    <meta name="description" content="A Destinus oferece os melhores pacotes de viagens rodoviários e aéreos para os destinos mais incríveis do Brasil e exterior.">
+    
+    <!-- Pré-conexão para melhor performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+</head>
+<body>
+    <!-- Cursor Personalizado -->
+    <div class="custom-cursor"></div>
+    
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p>PREPARANDO SUA PRÓXIMA AVENTURA</p>
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo" id="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="Destinus" class="logo-img">
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="pacotes.html" class="nav-link">Pacotes</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-cta">
+                <button class="cta-button pulse">FALE COM UM ESPECIALISTA</button>
+            </div>
+            
+            <div class="mobile-menu-btn">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <!-- Slide 1 -->
+            <div class="slide active" style="background-image: url('images/hero-1.jpg')">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1>DESCUBRA O BRASIL <span>DE ÔNIBUS</span></h1>
+                    <p>Pacotes rodoviários com conforto, segurança e o melhor custo-benefício</p>
+                    <div class="hero-cta">
+                        <button class="cta-button large">VER PACOTES</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="slide" style="background-image: url('images/hero-2.jpg')">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1>VIAGENS AÉREAS <span>COM DESCONTO</span></h1>
+                    <p>As melhores tarifas aéreas combinadas com hospedagens exclusivas</p>
+                    <div class="hero-cta">
+                        <button class="cta-button large">VER PACOTES</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+   <!-- Slide 3 -->
+   <div class="slide hero-3" style="background-image: url('images/hero-3.jpg')">
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+        <h1>CRUZEIROS <span>INESQUECÍVEIS</span></h1>
+        <p>Navegue pelos melhores destinos com todo conforto e luxo dos navios mais modernos</p>
+        <div class="hero-cta">
+            <button class="cta-button large">VER PACOTES</button>
+        </div>
+    </div>
+</div>
+        
+        <div class="slider-controls">
+            <button class="slider-prev"><</button>
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <button class="slider-next">></button>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="arrow-down"></div>
+        </div>
+    </section>
+    
+    <!-- Pacotes em Destaque Section -->
+    <section class="destaques-section">
+        <div class="section-header">
+            <h2>PACOTES <span>EM DESTAQUE</span></h2>
+            <p>Os pacotes mais procurados pelos nossos clientes</p>
+        </div>
+        
+        <div class="pacotes-grid">
+            <!-- Pacote 1 -->
+            <div class="pacote-card rodoviario">
+                <div class="pacote-badge">RODOVIÁRIO</div>
+                <div class="pacote-image">
+                    <img src="images/pacote-1.jpg" alt="Pantanal">
+                    <div class="pacote-overlay"></div>
+                </div>
+                <div class="pacote-info">
+                    <h3>Pantanal, Bonito, Miranda e Corumbá / MS
+                    </h3>
+                    <div class="pacote-meta">
+                        <span class="duracao">8 dias</span>
+                        <span class="preco">10x de R$375,00</span>
+                    </div>
+                    <div class="pacote-desc">
+                        <p>Conheça as maravilhas do Pantanal, Bonito, Miranda e Corumbá em uma viagem repleta de natureza e aventura.</p>
+                    </div>
+                    <div class="pacote-cta">
+                        <button class="cta-button small">DETALHES</button>
+                        <button class="secondary-button small">FAZER RESERVA</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pacote 2 -->
+            <div class="pacote-card rodoviario">
+                <div class="pacote-badge">RODOVIÁRIO</div>
+                <div class="pacote-image">
+                    <img src="images/pacote-2.jpg" alt="Aparecida e Rio de Janeiro">
+                    <div class="pacote-overlay"></div>
+                </div>
+                <div class="pacote-info">
+                    <h3>Aparecida e Rio de Janeiro</h3>
+                    <div class="pacote-meta">
+                        <span class="duracao">6 dias</span>
+                        <span class="preco">10x de R$275,00</span>
+                    </div>
+                    <div class="pacote-desc">
+                        <p>Descubra a fé e a beleza em uma viagem que une Aparecida e Rio de Janeiro.</p>
+                    </div>
+                    <div class="pacote-cta">
+                        <button class="cta-button small">DETALHES</button>
+                        <button class="secondary-button small">FAZER RESERVA</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pacote 3 -->
+            <div class="pacote-card aereo">
+                <div class="pacote-badge">RODOVIÁRIO</div>
+                <div class="pacote-image">
+                    <img src="images/pacote-3.jpg" alt="Ametista do Sul">
+                    <div class="pacote-overlay"></div>
+                </div>
+                <div class="pacote-info">
+                    <h3>Ametista do Sul</h3>
+                    <div class="pacote-meta">
+                        <span class="duracao">1 dia</span>
+                        <span class="preco">04x de R$87,59</span>
+                    </div>
+                    <div class="pacote-desc">
+                        <p>Encante-se com Ametista do Sul, um destino único no sul do Brasil onde natureza, espiritualidade e pedras preciosas se encontram.</p>
+                    </div>
+                    <div class="pacote-cta">
+                        <button class="cta-button small">DETALHES</button>
+                        <button class="secondary-button small">FAZER RESERVA</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-cta">
+            <a class="cta-button2" href="pacotes.html">VER TODOS OS PACOTES</a>
+        </div>
+    </section>
+    
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="section-header">
+            <h2>DICAS E <span>NOTÍCIAS</span></h2>
+            <p>Confira nossas últimas publicações para planejar sua viagem</p>
+        </div>
+        
+        <div class="blog-grid">
+            <!-- Post 1 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/blog-1.jpg" alt="Dicas para viagens de ônibus">
+                    <div class="blog-overlay"></div>
+                </div>
+                <div class="blog-info">
+                    
+                    <h3>10 Dicas para Viajar de Ônibus com Conforto</h3>
+                    <p class="blog-resumo">Saiba como tornar sua viagem rodoviária mais agradável com essas dicas essenciais...</p>
+                    <div class="blog-meta">
+                        <span class="blog-data">15 MAI 2025</span>
+                        <span class="blog-tempo">5 MIN LEITURA</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Post 2 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/blog-2.jpg" alt="Destinos nacionais">
+                    <div class="blog-overlay"></div>
+                </div>
+                <div class="blog-info">
+                    
+                    <h3>5 Destinos Nacionais Perfeitos para Viajar em 2025</h3>
+                    <p class="blog-resumo">Confira nossa seleção dos melhores destinos brasileiros para visitar este ano...</p>
+                    <div class="blog-meta">
+                        <span class="blog-data">02 MAI 025</span>
+                        <span class="blog-tempo">7 MIN LEITURA</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Post 3 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/blog-3.jpg" alt="Economizar em viagens">
+                    <div class="blog-overlay"></div>
+                </div>
+                <div class="blog-info">
+                    
+                    <h3>Como Economizar em Pacotes de Viagem sem Perder Qualidade</h3>
+                    <p class="blog-resumo">Estratégias inteligentes para gastar menos e aproveitar mais suas férias...</p>
+                    <div class="blog-meta">
+                        <span class="blog-data">20 ABR 2025</span>
+                        <span class="blog-tempo">6 MIN LEITURA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-cta">
+            <a class="cta-button2" href="blog.html">VER TODOS OS ARTIGOS</a>
+        </div>
+    
+    </section>
+    
+    <!-- Contato Section -->
+    <section id="contato" class="contato-section">
+        <div class="section-header">
+            <h2>FALE <span>CONOSCO</span></h2>
+            <p>Tire suas dúvidas ou solicite um orçamento personalizado</p>
+        </div>
+        
+        <div class="contato-container">
+            <div class="contato-info">
+                
+                <div class="info-item">
+                    <img src="assets/icons/email-icon.svg" alt="Email">
+                    <div>
+                        <h4>Email</h4>
+                        <p>contato@destinus.com.br</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <img src="assets/icons/whatsapp-icon.svg" alt="WhatsApp">
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <p>(11) 98765-4321</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <img src="assets/icons/clock-icon.svg" alt="Horário">
+                    <div>
+                        <h4>Horário de Atendimento</h4>
+                        <p>Segunda a Sexta: 9h às 18h<br>Sábado: 9h às 13h</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contato-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="nome" name="nome" required>
+                        <label for="nome">Nome Completo</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="tel" id="telefone" name="telefone" required>
+                        <label for="telefone">Telefone</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <select id="assunto" name="assunto" required>
+                            <option value=""></option>
+                            <option value="orcamento">Solicitar Orçamento</option>
+                            <option value="duvida">Tirar Dúvidas</option>
+                            <option value="reclamacao">Reclamação</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                        <label for="assunto">Assunto</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                        <label for="mensagem">Mensagem</label>
+                    </div>
+                    
+                    <button type="submit" class="cta-button full-width">ENVIAR MENSAGEM</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <span>DESTINUS</span>
+                <p>Sua jornada começa aqui</p>
+                
+                <div class="social-icons">
+                    <a href="#"><img src="assets/icons/facebook-icon.svg" alt="Facebook"></a>
+                    <a href="#"><img src="assets/icons/instagram-icon.svg" alt="Instagram"></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Pacotes</h4>
+                    <ul>
+                        <li><a href="#">Pacotes Rodoviários</a></li>
+                        <li><a href="#">Pacotes Aéreos</a></li>
+                        <li><a href="#">Pacotes Nacionais</a></li>
+                        <li><a href="#">Pacotes Internacionais</a></li>
+                        <li><a href="#">Promoções</a></li>
+                    </ul>
+                </div>
+                
+                <div class="link-group">
+                    <h4>Informações</h4>
+                    <ul>
+                        <li><a href="#">Blog de Viagens</a></li>
+                        <li><a href="#">Dicas para Viajar</a></li>
+                        <li><a href="#">Documentação Necessária</a></li>
+                        <li><a href="#">Perguntas Frequentes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="link-group">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre a Destinus</a></li>
+                        <li><a href="#">Termos e Condições</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Destinus Turismo. Todos os direitos reservados.</p>
+            <div class="payment-methods">
+                <img src="assets/icons/visa-icon.svg" alt="Visa">
+                <img src="assets/icons/mastercard-icon.svg" alt="Mastercard">
+                <img src="assets/icons/pix-icon.svg" alt="Pix">
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Botão WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=5555996222695&text=Ola.%20Tudo%20bem?%20Atenderemos%20você%20assim%20que%20possível.%0AObrigada%20por%20nós%20contatar&fbclid=PAZXh0bgNhZW0CMTEAAacZD5Dmk9RQ9eWGmsIHwlSeO6fC3qSlGsAsp_3_vJLFmJFblu30hhdquBXPkg_aem_tSwep8Nmndj9KBUGbYvowg" 
+            class="whatsapp-button" target="_blank">
+        <img src="assets/icons/whatsapp-icon-large.svg" alt="WhatsApp">
+    </a>
+    
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
